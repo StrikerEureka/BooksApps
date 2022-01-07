@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetailActivity"
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imagebox"
+        android:layout_gravity="center"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/primary"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/image"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:background="@color/black"
+            android:src="@drawable/ic_default_images"/>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/viewTitle"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/imagebox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Judul Buku"/>
+        <TextView
+            android:id="@+id/tvBookName"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=": uhahaha"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewCreator"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/viewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nama Penulis"/>
+        <TextView
+            android:id="@+id/tvPenulis"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=": Uhu"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewPenerbit"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/viewCreator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Nama Penerbit"/>
+        <TextView
+            android:id="@+id/tvPenerbit"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=": Yau"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/viewSinopsis"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/viewPenerbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Sinopsis"/>
+        <TextView
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=":"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSinopsis"
+        android:justificationMode="inter_word"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/lorem_ipsum"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/viewSinopsis"
+        tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

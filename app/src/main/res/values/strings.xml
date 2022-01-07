@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BooksApps</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut feugiat fringilla porta. Suspendisse tempor arcu libero, sed ultrices mauris volutpat a. Sed id ex tellus. Donec porta porttitor viverra. In ac finibus metus, a tristique quam. Etiam volutpat metus ante, et cursus nunc mollis fermentum. Integer ullamcorper dolor sit amet tortor semper, eget tempus ante fermentum. Aenean et urna id diam semper rhoncus. Vivamus tempor aliquet elementum.Nunc interdum dui sit amet metus facilisis, mollis ornare justo auctor. In sit amet iaculis mi. Sed interdum leo molestie dui interdum, sit amet viverra libero mollis. Praesent rutrum in orci sit amet tincidunt. Nam pellentesque commodo faucibus. Aenean aliquam ultrices quam sit amet malesuada. Etiam dapibus ultricies tortor, vel finibus arcu tempor sit amet. Aenean imperdiet, metus vitae laoreet elementum, arcu lacus suscipit justo, sagittis dictum libero ex id erat.</string>
+    <string name="detail_input">: %s</string>
+</resources>
